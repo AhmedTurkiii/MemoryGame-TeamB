@@ -4,42 +4,77 @@
     margin: 0;
     padding: 0
 }
-        
+  
+html
+{
+    height: 100%
+}      
 body
 {
-    font-family: Tahoma, Arial; 
+    height: 95%;
+    font-family: 'Roboto Condensed', sans-serif; 
+    background-image: url(netclipart.com-mushroom-cloud-clipart-942820.png);
+    background-size: 100%
+}
+.signOut
+{
+    color: #3D928F;
+    margin:1%;
+    font-size: 25px;
+
+}
+.signOut:link{
+    display: all;
+    color: #3D928F;
+    text-decoration: none;
+}
+.signOut:visited{
+    color: #0A6B67;
+    text-decoration: none;
+}
+a{
+    color: #3D928F
 }
 
 .info
 {
-    width: 500px;
-    margin: 10px auto;
-    padding: 5px;
+    height: 10%;
+    width: 40%;
+    margin: 2% auto;
+    margin-top: -1%;
+    font-size: 25px;
+    padding: 1%;
     overflow: hidden;
-    border: 2px solid #b9194e
+    background-color:rgb(255, 255, 255);opacity:0.8;
+    border-radius: 10px;
+    border:2px solid #3D928F;
+    color: #3D928F;
 }
 
 .info .name
 {
     float: left;
-    margin-left: 5px
+    margin-left: 1%
 }
 
 .info .tries
 {
     float: right;
     text-align: right;
-    margin-right: 5px;
+    margin-right: 1%
 }
 
 .container-game-blocks
 {
     width: 500px;
     height: 500px;
-    margin: 10px auto;
+    margin: 1% auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #b9194e
+    background-color:rgb(255, 255, 255);opacity:1;
+    border-radius: 10px;
+    border:2px solid #3D928F;
+
 }
 
 .container-game-blocks.no-click
@@ -59,7 +94,7 @@ body
 
 .container-game-blocks .game-block .front
 {
-    background-color: #b9194e;
+    background-color: #3D928F;
     border-radius: 50%;
     color: #fff;
     line-height: 100px;
@@ -73,7 +108,7 @@ body
 
 .container-game-blocks .game-block .back
 {
-    background-color: #b9194e;
+    background-color: #3D928F;
     border-radius: 50%;
 
     height: 100px;
