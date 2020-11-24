@@ -18,6 +18,9 @@ a
 {
 	color: #3D928F;
 }
+.labelOfSignUp{
+    text-align: left;
+}
 .Main:link{
     display: all;
     color: #3D928F;
