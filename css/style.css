@@ -42,7 +42,7 @@ a{
     height: 10%;
     width: 40%;
     margin: 2% auto;
-    margin-top: -1%;
+    margin-top: -3%;
     font-size: 25px;
     padding: 1%;
     overflow: hidden;
@@ -70,6 +70,7 @@ a{
     width: 500px;
     height: 500px;
     margin: 1% auto;
+    margin-top: -17px;
     display: flex;
     flex-wrap: wrap;
     background-color:rgb(255, 255, 255);opacity:1;
