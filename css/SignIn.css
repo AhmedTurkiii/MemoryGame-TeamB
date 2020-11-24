@@ -37,7 +37,6 @@ tr>td{
     font-size: 45px;
     padding: 1%;
     font-weight: bold;
-    text-decoration: underline;
 }
 .title
 {
@@ -45,7 +44,6 @@ tr>td{
     font-size: 65px;
     padding: 1%;
     font-weight: bold;
-    text-decoration: underline;
 }
 .container
 {
@@ -55,10 +53,10 @@ tr>td{
     font-size: 25px;
     padding: 1%;
     overflow: hidden;
-    background-color:rgb(255, 255, 255);opacity:0.9;
+    background-color:rgba(133, 205, 204, 0.8) ;
     border-radius: 10px;
-    border:2px solid #3D928F;
-    color: #3D928F;
+    border:2px solid white;
+    color: white;
     text-align:center
 }
 td{
@@ -67,7 +65,7 @@ td{
 .designInput
 {
 		display: flex;
-	    border: 1px solid #3D928F;
+	    border: 1px solid white;
 	    box-shadow: none;
 	    border-radius: 24px;
 	    margin: 0 auto;
@@ -83,26 +81,66 @@ table , tr, td
 {
 	text-align: center ;
 }
-.Login{
-	background-image: -webkit-linear-gradient(top,#3D928F,#3D928F);
-    background-color: #3D928F;
-    border: 1px solid #3D928F;
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-family: 'Roboto Condensed',sans-serif;
-    font-size: 34px;
-    margin: 20px auto;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 46px;
-    min-width: 74px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.Login:hover{
-	background-image: -webkit-linear-gradient(top,#FFFFFF,#FFFFFF);
-	color: #3D928F;
-	background-color: #FFFFFF;
 
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-one span {
+    transition: all 0.3s;
+}
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
 }
