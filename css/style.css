@@ -14,7 +14,8 @@ body
     height: 95%;
     font-family: 'Roboto Condensed', sans-serif; 
     background-image: url(netclipart.com-mushroom-cloud-clipart-942820.png);
-    background-size: 100%
+    background-size: 100%;
+    overflow:hidden;
 }
 .signOut
 {
