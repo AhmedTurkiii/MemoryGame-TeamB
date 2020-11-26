@@ -45,7 +45,8 @@ function check(){
 
     if(userName.value == storedName && userPw.value == storedPw){
         alert('You are logged in ');
-        window.location.replace ="index.html";
+        window.open("index.html", "_self");
+
     }else{
         alert('Error on login');
     }
