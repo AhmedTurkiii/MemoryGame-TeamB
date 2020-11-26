@@ -37,3 +37,20 @@ function checkMatchedBlocks(firstBlock, secondBlock) {
     }
 
 }
+
+function Flip(selectBlock) {
+    selectBlock.classList.add('flipped');
+
+    let Flippeing = blocks.filter(Flipped => Flipped.classList.contains('flipped'));
+    if (Flippeing.length === 2) {
+        Stop();
+        cheak(Flippeing[0], Flippeing[1]);
+    }
+}
+
+function Stop() {
+    blocksContainer.classList.add('no-click');
+    setTimeout(() => {
+        blocksContainer.classList.remove('no-click');
+    }, duration);
+}
