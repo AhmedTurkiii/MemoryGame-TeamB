@@ -1,13 +1,22 @@
-// Effect Duration
 let duration = 1000;
-// Select Blocks Container
 let blocksContainer = document.querySelector(".container-game-blocks");
-// Create Array From Game Blocks
 let blocks = Array.from(blocksContainer.children);
-// Create Array From Game Blocks
 
 let orderRange = Array.from(Array(blocks.length).keys());
  
+function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+    while (ctr > 0) {
+        index = Math.floor(Math.random() * ctr);
+        ctr--;
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
+}
+
+shuffle(orderRange)
 
 blocks.forEach((block, index) => {
     block.style.order = orderRange[index];
@@ -33,7 +42,8 @@ function Stop() {
         blocksContainer.classList.remove('no-click');
     }, duration);
 }
-// Check Matched Block
+
+
 function checkMatchedBlocks(firstBlock, secondBlock) {
 
     let triesElement = document.querySelector('.tries span');
