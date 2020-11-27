@@ -19,12 +19,14 @@ document.querySelector('.control-button #signin_btn').onclick = function () {
     this.style.display = "none";
     document.querySelector('.control-button #signup_btn').style.display = "none";
 }
-var Uname = document.getElementById('Uname');
-var pw = document.getElementById('pw');
+var Uname = document.getElementById('Uname'),
+    pw = document.getElementById('pw'),
+    repaet_pw = document.getElementById('repeat_pw');
+
 
 function store_user() {
-    if(Uname.value == '' || Uname.value == null || pw.value == '' || pw.value == null ) {
-        alert('username or password is Empty!');
+    if(Uname.value == '' || Uname.value == null || pw.value == '' || pw.value == null || repaet_pw.value != pw.value ) {
+        alert('username or password is Uncorrect!');
     }else {
         localStorage.setItem('name', Uname.value);
         localStorage.setItem('pw', pw.value);
@@ -34,10 +36,10 @@ function store_user() {
 
 function check_user() {
 
-    var storedName = localStorage.getItem('name');
-    var storedPw = localStorage.getItem('pw');
-    var userName = document.getElementById('userName');
-    var userPw = document.getElementById('userPw');
+    var storedName = localStorage.getItem('name'),
+        storedPw = localStorage.getItem('pw'),
+        userName = document.getElementById('userName'),
+        userPw = document.getElementById('userPw');
 
     if(userName.value !== storedName || userPw.value !== storedPw) {
         alert('username or password not correct!');
