@@ -43,10 +43,10 @@ function store_user() {
 
 function check_user() {
 
-    var storedName = localStorage.getItem('name');
-    var storedPw = localStorage.getItem('pw');
-    var userName = document.getElementById('userName');
-    var userPw = document.getElementById('userPw');
+    var storedName = localStorage.getItem('name'),
+        storedPw = localStorage.getItem('pw'),
+        userName = document.getElementById('userName'),
+        userPw = document.getElementById('userPw');
 
     if(userName.value !== storedName || userPw.value !== storedPw) {
         alert('username or password not correct!');
@@ -132,6 +132,7 @@ document.querySelector(".restart span").onclick = function(){
     shuffle(orderRange);
     blocks.forEach((block, index) => {
         block.classList.remove('mached');
+        block.classList.remove('flipped');
         block.style.order = orderRange[index];
         document.querySelector('.tries span').innerHTML = 0;
     });
