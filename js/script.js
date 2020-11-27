@@ -19,25 +19,19 @@ document.querySelector('.control-button #signin_btn').onclick = function () {
     this.style.display = "none";
     document.querySelector('.control-button #signup_btn').style.display = "none";
 }
-var Uname = document.getElementById('Uname');
-var pw = document.getElementById('pw');
-var repeatPw = document.getElementById('repeat_pw');
+var Uname = document.getElementById('Uname'),
+    pw = document.getElementById('pw'),
+    repaet_pw = document.getElementById('repeat_pw');
+
 
 function store_user() {
-    if(Uname.value == '' || Uname.value == null || pw.value == '' || pw.value == null ) {
-        alert('username or password is Empty!');
-    }
-
-    else {
-        if(repeatPw.value == pw.value )
-        {localStorage.setItem('name', Uname.value);
+    if(Uname.value == '' || Uname.value == null || pw.value == '' || pw.value == null || repaet_pw.value != pw.value ) {
+        alert('username or password is Uncorrect!');
+    }else {
+        localStorage.setItem('name', Uname.value);
         localStorage.setItem('pw', pw.value);
-        alert('Good, account created.. try login agian!');}
-        else
-        {
-            console.log(pw, "   ", repeatPw)
-            alert ("Your password does not matched") ;
-        }
+        alert('Good, account created.. try login agian!');
+        window.location.reload();
     }
 }
 
