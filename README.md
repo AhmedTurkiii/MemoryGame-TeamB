@@ -2,6 +2,8 @@
 
 This website is made using JS as backend and HTML CSS as frontend 
 
+You can check the live game from [here](https://iti-swd-memorygame.netlify.app/)
+
 ## contributers
 
 (ITI) Team B in Software Web Fundamentals:
