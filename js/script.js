@@ -125,6 +125,7 @@ document.querySelector(".restart span").onclick = function(){
     shuffle(orderRange);
     blocks.forEach((block, index) => {
         block.classList.remove('mached');
+        block.classList.remove('flipped');
         block.style.order = orderRange[index];
         document.querySelector('.tries span').innerHTML = 0;
     });
