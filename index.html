@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta name="description" content="the first document i write!">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="icon.jpg" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="images/icon.jpg" />
     <title>
         Memory Game
     </title>
 </head>
 <body>
-    <div class="signOut">
-        <a href="Home.html">Sign out</a> 
-    </div>
+    <div class="control-button">
+        <h1>Memory Game</h1>
+        <span id="signup_btn">
+            Create Account
+        </span>
+        <div class="sign_up">
+            <h3 class="h3">Create Account</h3>
+            <span onclick="goBack()" class="go_back"><<</span>
+            <input type="text" id="Uname" placeholder="username">
+            <input type="password" id="pw" placeholder="password">
+            <input type="password" id="repeat_pw" placeholder="Repeat password">
+            <input type="button" value="Submit" onClick="store_user()">
+        </div>
 
+        <span id="signin_btn">
+            Login
+        </span>
+        <div class="sign_in">
+            <h3 class="h3">Login</h3>
+            <span onclick="goBack()" class="go_back"><<</span>
+            <input type="text" id="userName" placeholder="username">
+            <input type="password" id="userPw" placeholder="password">
+            <input type="button" value="Login" onClick="check_user()">
+        </div>
+    </div>
     <div class="info">
-        <div class="name">
+        <div class="hi_name">
             Hello:
             <span></span>
         </div>
@@ -98,6 +117,20 @@
             <div class="face front"> <span></span>      </div>
             <div class="face back" > <img src="images/zedd.jpg"> </div>
         </div>
+    </div>
+    <div class="restart">
+        <span>
+            Restart
+        </span>
+    </div>
+    <div class="footer">
+        Copyright © 2020 (
+            <a href="mailto:sally.eissawy200@gmail.com">Sally</a>,
+            <a href="mailto:mahmoudelsharawy92@gmail.com">Shaarawy</a>,
+            <a href="mailto:ahmedturki2232014@gmail.com">Turki</a>,
+            <a href="mailto:mayararaby246@gmail.com">Mayar</a>,
+            <a href="mailto:ka99ali@gmail.com">Ali</a>
+        ) All Rights Reserved.
     </div>
     <audio id="success" src="audio/success.mp3" preload="auto"></audio>
     <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>

@@ -5,54 +5,141 @@
     padding: 0
 }
   
-html
-{
-    height: 100%
-}      
 body
 {
-    height: 95%;
     font-family: 'Roboto Condensed', sans-serif; 
     background-image: url(netclipart.com-mushroom-cloud-clipart-942820.png);
     background-size: 100%;
-    overflow:hidden;
 }
-.signOut
+.control-button
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #f7fdfcdc;
+}
+
+.control-button h1
 {
     color: #3D928F;
-    margin:1%;
-    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 45px;
+    text-decoration: underline;
+}
+.control-button #signin_btn,
+.control-button #signup_btn
+{
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3D928F;
+    color: #fff;
+    padding:15px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.control-button #signup_btn
+{
+    top: 61%;
+}
+
+.control-button #signup_btn:hover,
+.control-button #signin_btn:hover
+{
+    width: 190px;
+    padding:12px 25px;
+}
+
+.sign_up,
+.sign_in
+{
+    padding: 40px 15px 0px 15px;
+    display: none;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3D928F;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.sign_up > span,
+.sign_in > span
+{
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
 
 }
-.signOut:link{
-    display: all;
-    color: #3D928F;
-    text-decoration: none;
+
+.sign_up > span:hover,
+.sign_in > span:hover
+{
+    background-color: #327e7b;
 }
-.signOut:visited{
-    color: #0A6B67;
-    text-decoration: none;
+
+.sign_up > input,
+.sign_in > input
+{
+    display: block;
+    opacity: .5;
+    margin:auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
 }
-a{
-    color: #3D928F
+
+.sign_up > input[type='button'],
+.sign_in > input[type='button']
+{
+    background-color: #fff;
+    opacity: .8;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.sign_up > input:focus,
+.sign_in > input:focus,
+.sign_up > input[type='button']:hover,
+.sign_in > input[type='button']:hover
+{
+    opacity: 1;
 }
 
 .info
 {
-    height: 10%;
-    width: 40%;
-    margin: 2% auto;
-    margin-top: -3%;
+    height: 50px;
+    width: 500px;
+    margin: 20px auto;
     font-size: 25px;
     padding: 1%;
-    overflow: hidden;
-    background-color:rgb(255, 255, 255);opacity:0.8;
+    background-color:rgb(255, 255, 255);
+    opacity:0.8;
     border-radius: 10px;
     border:2px solid #3D928F;
     color: #3D928F;
+    display: block;
 }
 
-.info .name
+.info .hi_name
 {
     float: left;
     margin-left: 1%
@@ -76,7 +163,6 @@ a{
     background-color:rgb(255, 255, 255);opacity:1;
     border-radius: 10px;
     border:2px solid #3D928F;
-
 }
 
 .container-game-blocks.no-click
@@ -134,6 +220,15 @@ a{
     font-size: 50px;
 }
 
+.container-game-blocks .game-block .face:hover
+{
+    background-color:#2d7c7a;
+}
+
+.container-game-blocks .game-block:hover
+{
+    padding: 1px 1px;
+}
 
 .container-game-blocks .game-block.flipped
 {
@@ -145,3 +240,44 @@ a{
     transform: rotateY(180deg);
     pointer-events: none; 
 }
+
+.restart
+{
+    text-align: center;
+
+}
+.restart span
+{
+    width: 120px;
+    margin: 10px auto;
+    padding: 4px 10px;
+    background-color: #2d7c7a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.restart span:hover
+{
+    background-color: #348d8a;
+}
+.footer
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #327e7b;
+}
+
+.footer a
+{
+    cursor: pointer;
+    color: #1e5e5b;
+}
+
+.footer a:hover
+{
+    cursor: pointer;
+    color: #caa604;
+}
+
