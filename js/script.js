@@ -21,14 +21,23 @@ document.querySelector('.control-button #signin_btn').onclick = function () {
 }
 var Uname = document.getElementById('Uname');
 var pw = document.getElementById('pw');
+var repeatPw = document.getElementById('repeat_pw');
 
 function store_user() {
     if(Uname.value == '' || Uname.value == null || pw.value == '' || pw.value == null ) {
         alert('username or password is Empty!');
-    }else {
-        localStorage.setItem('name', Uname.value);
+    }
+
+    else {
+        if(repeatPw.value == pw.value )
+        {localStorage.setItem('name', Uname.value);
         localStorage.setItem('pw', pw.value);
-        alert('Good, account created.. try login agian!');
+        alert('Good, account created.. try login agian!');}
+        else
+        {
+            console.log(pw, "   ", repeatPw)
+            alert ("Your password does not matched") ;
+        }
     }
 }
 
