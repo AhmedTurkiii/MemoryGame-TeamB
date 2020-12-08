@@ -1,4 +1,4 @@
-# Memory_game01
+# MemoryGame-ITi-SWD-TeamB-Aswan
 
 This website is made using JS as backend and HTML CSS as frontend 
 
