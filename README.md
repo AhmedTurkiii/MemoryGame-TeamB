@@ -8,7 +8,7 @@ You can check the live game from [here](https://iti-swd-memorygame.netlify.app/)
 
 (ITI) Team B in Software Web Fundamentals:
 * [Sally](https://github.com/sallyElsayedShehataa)
-* [Turki](https://github.com/AhmedTurkiii)
+* [Torki](https://github.com/AhmedTurkiii)
 * [Mayar](https://github.com/mayararaby)
 * [Shaaarawy](https://github.com/MahmoudElsh3rawy)
 * [Ali](https://github.com/alikhaled17)
